@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FotoEstudio", "SoftwareFotoEstudio\FotoEstudio.vbproj", "{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugVER|Any CPU = DebugVER|Any CPU
+		Final|Any CPU = Final|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.DebugVER|Any CPU.ActiveCfg = DebugVER|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.DebugVER|Any CPU.Build.0 = DebugVER|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.Final|Any CPU.ActiveCfg = Final|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.Final|Any CPU.Build.0 = Final|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://076db.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SoftwareFotoEstudio\\FotoEstudio.vbproj
+		SccProjectName1 = SoftwareFotoEstudio
+		SccLocalPath1 = SoftwareFotoEstudio
+	EndGlobalSection
+EndGlobal

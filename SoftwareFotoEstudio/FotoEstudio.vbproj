@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEF3D3FC-B9FA-431F-BD7C-C1A2C9C69292}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FotoEstudio.My.MyApplication</StartupObject>
+    <RootNamespace>FotoEstudio</RootNamespace>
+    <AssemblyName>SoftwareFotoEstudio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SoftwareFotoEstudio.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SoftwareFotoEstudio.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugVER|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\DebugVER\</OutputPath>
+    <DocumentationFile>SoftwareFotoEstudio.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Final|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Final\</OutputPath>
+    <DocumentationFile>SoftwareFotoEstudio.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imag.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.7\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.0.9.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlBackup.NET.2.0.9.4\lib\net45\MySqlBackup.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes\ClientesAgregar.Designer.vb">
+      <DependentUpon>ClientesAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesDetalles.Designer.vb">
+      <DependentUpon>ClientesDetalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesDetalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesModificar.Designer.vb">
+      <DependentUpon>ClientesModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesPrincipal.Designer.vb">
+      <DependentUpon>ClientesPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDConexiones.vb" />
+    <Compile Include="Configuraciones.Designer.vb">
+      <DependentUpon>Configuraciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\HistorialAbonos.Designer.vb">
+      <DependentUpon>HistorialAbonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\HistorialAbonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.vb">
+      <DependentUpon>IniciarSesion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PaginaPrincipal.Designer.vb">
+      <DependentUpon>PaginaPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarContrasena.Designer.vb">
+      <DependentUpon>RecuperarContrasena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarContrasena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ClienteServicio.Designer.vb">
+      <DependentUpon>ClienteServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ClienteServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\EditarTickets.Designer.vb">
+      <DependentUpon>EditarTickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\EditarTickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServicioBuscarTicket.Designer.vb">
+      <DependentUpon>ServicioBuscarTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServicioBuscarTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosAbonos.Designer.vb">
+      <DependentUpon>ServiciosAbonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosAbonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosFotos\Agregar_Fotos.designer.vb">
+      <DependentUpon>Agregar_Fotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosFotos\Agregar_Fotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosFotos\BDConexionesFotos.vb" />
+    <Compile Include="Servicios\ServiciosFotos\Detalles_Fotos.designer.vb">
+      <DependentUpon>Detalles_Fotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosFotos\Detalles_Fotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosFotos\Foto.vb" />
+    <Compile Include="Servicios\ServiciosFotos\Modificar_Fotos.designer.vb">
+      <DependentUpon>Modificar_Fotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosFotos\Modificar_Fotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarAlbum2.designer.vb">
+      <DependentUpon>agregarAlbum2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarAlbum2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarEdicion2.designer.vb">
+      <DependentUpon>agregarEdicion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarEdicion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarImpresion2.designer.vb">
+      <DependentUpon>agregarImpresion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarImpresion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarInvitaciones2.designer.vb">
+      <DependentUpon>agregarInvitaciones2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\agregarInvitaciones2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\Album.vb" />
+    <Compile Include="Servicios\ServiciosOtros\BDconexionesOtros.vb" />
+    <Compile Include="Servicios\ServiciosOtros\detallesAlbum.designer.vb">
+      <DependentUpon>detallesAlbum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesAlbum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesEdicion.designer.vb">
+      <DependentUpon>detallesEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesImpresion.designer.vb">
+      <DependentUpon>detallesImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesInvitacion.designer.vb">
+      <DependentUpon>detallesInvitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\detallesInvitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\Edicion.vb" />
+    <Compile Include="Servicios\ServiciosOtros\Impresion.vb" />
+    <Compile Include="Servicios\ServiciosOtros\Invitacion.vb" />
+    <Compile Include="Servicios\ServiciosOtros\modificarAlbum.designer.vb">
+      <DependentUpon>modificarAlbum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarAlbum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarEdicion.designer.vb">
+      <DependentUpon>modificarEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarImpresion.designer.vb">
+      <DependentUpon>modificarImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarInvitacion.designer.vb">
+      <DependentUpon>modificarInvitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosOtros\modificarInvitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosPrincipal.Designer.vb">
+      <DependentUpon>ServiciosPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosNuevo.Designer.vb">
+      <DependentUpon>ServiciosNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\AgregarVideo.designer.vb">
+      <DependentUpon>AgregarVideo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\AgregarVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\conexionBDVideo.vb" />
+    <Compile Include="Servicios\ServiciosVideo\DetallesVideo.designer.vb">
+      <DependentUpon>DetallesVideo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\DetallesVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\ModificarVideo.designer.vb">
+      <DependentUpon>ModificarVideo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\ModificarVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServiciosVideo\Video.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="Usuarios\UsuariosAgregar.Designer.vb">
+      <DependentUpon>UsuariosAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosDetalles.Designer.vb">
+      <DependentUpon>UsuariosDetalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosDetalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosModificar.Designer.vb">
+      <DependentUpon>UsuariosModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosPrincipal.Designer.vb">
+      <DependentUpon>UsuariosPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\UsuariosPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Clientes\ClientesAgregar.resx">
+      <DependentUpon>ClientesAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ClientesDetalles.resx">
+      <DependentUpon>ClientesDetalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ClientesModificar.resx">
+      <DependentUpon>ClientesModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ClientesPrincipal.resx">
+      <DependentUpon>ClientesPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones.resx">
+      <DependentUpon>Configuraciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\HistorialAbonos.resx">
+      <DependentUpon>HistorialAbonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaPrincipal.resx">
+      <DependentUpon>PaginaPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarContrasena.resx">
+      <DependentUpon>RecuperarContrasena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ClienteServicio.resx">
+      <DependentUpon>ClienteServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\EditarTickets.resx">
+      <DependentUpon>EditarTickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServicioBuscarTicket.resx">
+      <DependentUpon>ServicioBuscarTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosAbonos.resx">
+      <DependentUpon>ServiciosAbonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosFotos\Agregar_Fotos.resx">
+      <DependentUpon>Agregar_Fotos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosFotos\Detalles_Fotos.resx">
+      <DependentUpon>Detalles_Fotos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosFotos\Modificar_Fotos.resx">
+      <DependentUpon>Modificar_Fotos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosNuevo.resx">
+      <DependentUpon>ServiciosNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\agregarAlbum2.resx">
+      <DependentUpon>agregarAlbum2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\agregarEdicion2.resx">
+      <DependentUpon>agregarEdicion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\agregarImpresion2.resx">
+      <DependentUpon>agregarImpresion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\agregarInvitaciones2.resx">
+      <DependentUpon>agregarInvitaciones2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\detallesAlbum.resx">
+      <DependentUpon>detallesAlbum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\detallesEdicion.resx">
+      <DependentUpon>detallesEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\detallesImpresion.resx">
+      <DependentUpon>detallesImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\detallesInvitacion.resx">
+      <DependentUpon>detallesInvitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\modificarAlbum.resx">
+      <DependentUpon>modificarAlbum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\modificarEdicion.resx">
+      <DependentUpon>modificarEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\modificarImpresion.resx">
+      <DependentUpon>modificarImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosOtros\modificarInvitacion.resx">
+      <DependentUpon>modificarInvitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosPrincipal.resx">
+      <DependentUpon>ServiciosPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosVideo\AgregarVideo.resx">
+      <DependentUpon>AgregarVideo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosVideo\DetallesVideo.resx">
+      <DependentUpon>DetallesVideo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\ServiciosVideo\ModificarVideo.resx">
+      <DependentUpon>ModificarVideo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\UsuariosAgregar.resx">
+      <DependentUpon>UsuariosAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\UsuariosDetalles.resx">
+      <DependentUpon>UsuariosDetalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\UsuariosModificar.resx">
+      <DependentUpon>UsuariosModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\UsuariosPrincipal.resx">
+      <DependentUpon>UsuariosPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="imag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Excel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
